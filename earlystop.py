@@ -1,4 +1,4 @@
-class EarlyStop2:
+class EarlyStop:
     def __init__(self, model, config=None, early_stop_patience=10, outdir="Model", target_score=None):
         self.model = model
         self.config = config
