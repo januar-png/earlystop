@@ -29,7 +29,7 @@ class Earlystop:
         self.test_costs.append(test_cost)
         self.train_scores.append(train_score)
         self.test_scores.append(test_score)
-        print(f"Epoch {len(self.train_costs)}: train_cost={train_cost:.4f}, test_cost={test_cost:.4f}, train_score={train_score:.4f}, test_score={test_score:.4f}")
+        print(f"Epoch {len(self.train_costs)}: train_loss={train_cost:.4f}, val_loss={test_cost:.4f}, train_score={train_score:.4f}, val_score={test_score:.4f}")
     
     def save_checkpoint(self):
         state = {
